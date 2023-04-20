@@ -6,10 +6,22 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class FizzBuzzTest {
+	
+	private FizzBuzz fb;
+	
+	@BeforeEach
+	void setUp() {
+		fb = new FizzBuzz();
+	}
 
 	@Test
 	void test() {
-		assertEquals(FizzBuzz.fizzbuzz(1),"1");
+		assertEquals(fb.fizzbuzz(1),"1");
+	}
+	
+	@Test
+	void test2() {
+		assertEquals(fb.fizzbuzz(2),"2");
 	}
 
 }
