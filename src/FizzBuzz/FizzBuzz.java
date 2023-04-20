@@ -7,11 +7,14 @@ public class FizzBuzz {
 
 
 	public String fizzbuzz(int num) {
+		StringBuilder res = new StringBuilder();
 		for (int i = 0; i < numSpe.length; i++) {
 			if(num % numSpe[i] == 0) {
-				return trad[i];
+				res.append(trad[i]);
 			}
 		}
-		return Integer.toString(num);
+		if (res.length() == 0) return Integer.toString(num);
+		
+		return res.toString();
 	}
 }
