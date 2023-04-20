@@ -28,5 +28,23 @@ class FizzBuzzTest {
 	void fbAns_Fizz_to_3() {
 		assertEquals("fizz", fb.fizzbuzz(3));
 	}
+	
+	void fbAns_to_int() {
+		assertEquals("7", fb.fizzbuzz(7));
+		assertEquals("13", fb.fizzbuzz(13));
+	}
+	
+	@Test
+	void fbAns_buzz() {
+		assertEquals(fb.fizzbuzz(5),"buzz");
+
+	}
+	
+	@Test
+	void fbAns_fizz_to_6() {
+		assertEquals(fb.fizzbuzz(6),"fizz");
+		assertEquals(fb.fizzbuzz(400),"buzz");
+
+	}
 
 }
